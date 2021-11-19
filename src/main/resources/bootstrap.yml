@@ -1,0 +1,10 @@
+eureka.client.serviceUrl:
+  defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud.config:
+    name: identity-service
+    discovery:
+      enabled: true
+      service-id: config-service
+  profiles.active: dev

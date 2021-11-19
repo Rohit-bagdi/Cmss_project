@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2.console:
+    enabled: true
+    settings:
+      trace: false
+      web-allow-others: false
+  redis:
+    host: localhost
+    port: 6379
+    password:
+#    password: Q21zc0AxMjM0IQ
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: validate
+
+
+
+
